@@ -1,9 +1,13 @@
 <template>
   <div class="home">
-    <h1>THE WORLD'S LEADING EVENT MANAGEMENT SYSTEM</h1>
+    <h1>Network problems?</h1>
+    <h3>
+      It looks like you're experiencing some network issues, please click the
+      back button and try again.
+    </h3>
 
-    <router-link :to="{ name: 'event-list' }"
-      ><button>Browse Events</button></router-link
+    <router-link :to="{ name: 'home' }"
+      ><button>Back to Home</button></router-link
     >
     <div class="footer">DESIGNED AND DEVELOPED BY EMMANUEL MOMOH</div>
   </div>
@@ -11,8 +15,12 @@
 
 <script>
 export default {
-  name: "Home",
-  components: {},
+  props: {
+    resource: {
+      type: String,
+      required: true,
+    },
+  },
 };
 </script>
 
@@ -29,11 +37,12 @@ h1 {
 }
 
 button {
-  color: #5d504d;
+  color: #09421d;
   background-color: #ffffff;
   padding: 20px 40px 20px 40px;
+  margin-top: 20px;
   font-family: montserrat;
-  font-size: 30px;
+  font-size: 15px;
   font-weight: 600;
   border-radius: 10px;
   text-transform: uppercase;
@@ -72,11 +81,11 @@ button {
   }
 
   button {
-    color: #5d504d;
+    color: #09421d;
     background-color: #ffffff;
     padding: 15px 30px 15px 30px;
     font-family: montserrat;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
     border-radius: 7.5px;
     text-transform: uppercase;
