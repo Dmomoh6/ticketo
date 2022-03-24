@@ -16,7 +16,7 @@
     "vue": "^3.2.26",
     "vue-datetime": "^1.0.0-beta.14",
     "vue-router": "^4.0.0-0",
-    "vuejs-datetimepicker": "^1.1.13",
+    "vuejs-datetimepicker": "https://github.com/Dmomoh6/vuejs-datetimepicker",
     "vuex": "^4.0.0-0"
   },
   "devDependencies": {
