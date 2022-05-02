@@ -77,7 +77,8 @@ tr > td:first-child {
     box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.16);
     -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.16);
     -moz-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.16);
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 }
 </style>

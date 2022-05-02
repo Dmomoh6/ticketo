@@ -38,7 +38,8 @@
   color: #000000;
   padding: 20px 0px 30px 4.5vw;
   min-height: calc(100vh - 210px);
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .pagination {
@@ -46,7 +47,8 @@
   position: relative !important;
   left: -40px !important;
   max-height: 100px !important;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .pagination > button {
@@ -93,7 +95,8 @@
     color: #000000;
     padding: 10px 10px 0px 10px;
     min-height: calc(100vh - 210px);
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 }
 </style>

@@ -118,7 +118,8 @@ textarea.error {
 
 textarea {
   height: 150px;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   resize: none;
 }
 
@@ -183,7 +184,8 @@ tr > td:first-child {
 
   textarea {
     height: 150px;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   .attendees {

@@ -21,7 +21,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .navitems {
