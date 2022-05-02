@@ -47,7 +47,7 @@
   position: relative !important;
   left: -40px !important;
   max-height: 100px !important;
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 
