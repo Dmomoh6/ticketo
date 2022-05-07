@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-  baseURL: process.env.baseURL,
+  baseURL: process.env.VUE_APP_URL,
   withCredentials: false,
   headers: {
     Accept: "application/json",
@@ -12,6 +12,7 @@ const apiClient = axios.create({
 
 export default {
   getEvents(perPage, page) {
+    console.log(process.env.baseURL);
     return apiClient.get("/events?_limit=" + perPage + "&_page=" + page);
   },
   getEvent(id) {

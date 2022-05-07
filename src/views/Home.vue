@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <h1>THE WORLD'S LEADING EVENT MANAGEMENT SYSTEM</h1>
-
+    {{ url }}
     <router-link :to="{ name: 'event-list' }"
       ><button>Browse Events</button></router-link
     >
@@ -13,6 +13,11 @@
 export default {
   name: "Home",
   components: {},
+  data() {
+    return {
+      url: process.env.baseURL,
+    };
+  },
 };
 </script>
 
