@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-  baseURL: `https://ticketo-server.herokuapp.com/`,
+  baseURL: BASE_URL,
   withCredentials: false,
   headers: {
     Accept: "application/json",
