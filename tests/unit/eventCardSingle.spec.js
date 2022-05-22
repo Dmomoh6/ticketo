@@ -1,29 +1,9 @@
-import { mount, RouterLinkStub } from "@vue/test-utils";
-import assert from "assert";
-import EventCard from "@/components/EventCard.vue";
+import { mount } from "@vue/test-utils";
+import EventCardSingle from "@/components/EventCardSingle.vue";
 
-describe("EventCard Component", () => {
-  it("adds the right params(id) for each event-card in the router-link", () => {
-    const wrapper = mount(EventCard, {
-      props: {
-        event: {
-          id: 2,
-        },
-      },
-      global: {
-        stubs: { RouterLink: RouterLinkStub },
-      },
-    });
-
-    const links = wrapper.findAllComponents(RouterLinkStub);
-
-    assert.strictEqual(links.length, 1);
-    assert.strictEqual(links.at(0).props().to.name, "single-event");
-    assert.strictEqual(links.at(0).props().to.params.id, 2);
-  });
-
+describe("EventCardSingle Component", () => {
   it("displays event information", () => {
-    const wrapper = mount(EventCard, {
+    const wrapper = mount(EventCardSingle, {
       props: {
         event: {
           id: 2,
@@ -46,13 +26,13 @@ describe("EventCard Component", () => {
           ],
         },
       },
-      global: {
-        stubs: { RouterLink: RouterLinkStub },
-      },
     });
 
     expect(wrapper.html()).toContain("Park Cleanup");
     expect(wrapper.html()).toContain("12:00 on Nov 12, 2018");
     expect(wrapper.html()).toContain("132 N Magnolia Street, Orlando, Florida");
+    expect(wrapper.html()).toContain("We're going to clean up this park.");
+    expect(wrapper.html()).toContain("Beth Swanson");
+    expect(wrapper.html()).toContain("nature");
   });
 });
