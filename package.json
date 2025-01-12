@@ -15,7 +15,7 @@
     "core-js": "^3.6.5",
     "nprogress": "^0.2.0",
     "vue": "^3.2.26",
-    "vue-datetime": "^1.0.0-beta.14",
+    "vue-datetime3": "^1.0.16",
     "vue-router": "^4.0.13",
     "vuejs-datetimepicker": "https://github.com/Dmomoh6/vuejs-datetimepicker",
     "vuex": "^4.0.0-0"
